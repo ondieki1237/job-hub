@@ -1,0 +1,74 @@
+/* Styling for Available Jobs section */
+.available-jobs {
+  background-color: #f8f9fa;
+  padding: 30px 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.available-jobs h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.job-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.job-card h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.job-card p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.job-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.job-card button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    width: 100%;
+  }
+}

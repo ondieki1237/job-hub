@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.dashboard {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.job-list, .history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job, .history-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job h3, .history-item p {
+  margin: 10px 0;
+}
+
+.fas {
+  font-size: 40px;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.earnings, .balance {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,118 @@
+/* src/components/CategoriesSection.css */
+
+.categories-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #f0f8ff, #e0f2ff);
+}
+
+.categories-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.category-card {
+  position: relative;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #1e90ff, #66c2ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.category-card:hover::after {
+  opacity: 0.1;
+}
+
+.category-icon {
+  font-size: 3rem;
+  color: #1e90ff;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: #ff4747;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  transform: rotate(45deg);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.ribbon.popular {
+  background: #ff9f00;
+}
+
+.ribbon.new {
+  background: #47c2ff;
+}
+
+.ribbon.recommended {
+  background: #00c851;
+}
+
+.post-job-btn {
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-job-btn:hover {
+  transform: scale(1.05);
+  background-color: #155a9c;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}

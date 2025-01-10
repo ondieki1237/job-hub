@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.history {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-icon {
+  font-size: 30px;
+  color: #007bff;
+}
+
+.job-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.job-info p {
+  color: #777;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #FFD700;
+  margin-top: 10px;
+}
+
+.rating span {
+  font-weight: bold;
+}
+
+.recommendation {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.recommendation p {
+  margin-left: 10px;
+}
+
+.recommendation svg {
+  vertical-align: middle;
+}

@@ -1,0 +1,125 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e90ff;
+  color: #fff;
+  position: relative;
+}
+
+.navbar-logo .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e2a92f;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  width: 400px; /* Wide for spacious layout */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Sections */
+.dropdown-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-section:last-child {
+  border-bottom: none;
+}
+
+.dropdown-section h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1e90ff; /* Blue heading */
+}
+
+.dropdown-section p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #666;
+}
+
+.dropdown-section:hover {
+  background-color: #f1faff;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Navbar Buttons */
+.navbar-buttons a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.btn-signup,
+.btn-login {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-signup {
+  background-color: #fff;
+  color: #000000;
+}
+
+.btn-login {
+  background-color: #fff;
+  color: #000000;
+}
+
+.btn-signup:hover {
+    background-color: #e3f2fd;
+}
+
+.btn-login:hover {
+  background-color: #e3f2fd;
+}
+

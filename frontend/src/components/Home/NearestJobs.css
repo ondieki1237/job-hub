@@ -1,0 +1,81 @@
+.nearest-jobs {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nearest-jobs h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.job-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.job-card:hover {
+  transform: scale(1.05);
+}
+
+.job-details {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.job-details h3 {
+  color: #333;
+}
+
+.job-details p {
+  color: #666;
+}
+
+.job-details svg {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.job-details p:last-child {
+  font-weight: bold;
+}
+
+.btn-directions {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-directions:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    width: 100%;
+  }
+}
