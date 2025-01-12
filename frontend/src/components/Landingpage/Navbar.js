@@ -9,7 +9,7 @@ const Navbar = () => (
     </div>
     <ul className="navbar-links">
       <li>
-        <a href="#find-talent">Find a Talent</a>
+        <a href="/talent">Find a Talent</a> {/* Updated Link */}
       </li>
       <li className="dropdown">
         <a href="#available-jobs">Available Jobs</a>

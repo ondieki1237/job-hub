@@ -7,6 +7,7 @@ import JobList from "./Joblist";
 import TestimonialSection from "./Testimonials";
 import Navbar from "./Navbar";
 
+
 const LandingPage = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Categories />
       <JobList />
       <TestimonialSection />
+
     </div>
   );
 };

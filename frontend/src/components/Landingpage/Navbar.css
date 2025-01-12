@@ -43,7 +43,7 @@
   top: 40px;
   left: 0;
   background-color: #fff;
-  color: #333;
+  color: #000000;
   border-radius: 8px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -56,39 +56,67 @@
 }
 
 /* Dropdown Sections */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Ensures proper placement below the navbar */
+  left: 0;
+  background-color: #fff;
+  color: #0f0c0c;
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  padding: 25px;
+  z-index: 1000;
+  width: 450px; /* Adjust width for more spacious layout */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Smooth drop-down effect */
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px); /* Initial position for animation */
+}
+
+/* Dropdown Sections */
 .dropdown-section {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.dropdown-section:last-child {
-  border-bottom: none;
-}
-
-.dropdown-section h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  color: #1e90ff; /* Blue heading */
-}
-
-.dropdown-section p {
-  font-size: 0.9rem;
-  margin: 0;
-  color: #666;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .dropdown-section:hover {
-  background-color: #f1faff;
-  border-radius: 8px;
+  background-color: #f9f9f9; /* Light hover effect */
+  transform: scale(1.02); /* Slight scaling for emphasis */
   cursor: pointer;
-  padding: 15px;
 }
 
+.dropdown-section h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1e90ff; /* Brand color */
+}
+
+.dropdown-section p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: #110c0c; /* Subtle text color */
+}
+
+/* Icons Styling */
+.dropdown-icon {
+  font-size: 1.5rem;
+  color: #050607;
+}
 /* Navbar Buttons */
 .navbar-buttons a {
   text-decoration: none;
